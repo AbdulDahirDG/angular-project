@@ -17,6 +17,7 @@ export class ProductPanelComponent {
   constructor (private productPanelService: ProductPanelService) {}
 
   @Input({required: true}) priceVal!: WritableSignal<number>;
+  @Input({required: true}) productList!: WritableSignal<{name: string, count: number}[]>
 
   public apiData: Product[] = [];
 

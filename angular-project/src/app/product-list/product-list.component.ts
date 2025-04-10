@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, Input, signal, WritableSignal } from '@angular/core';
 
 @Component({
   selector: 'app-product-list',
@@ -8,4 +8,6 @@ import { Component, signal } from '@angular/core';
 })
 export class ProductListComponent {
 
+  @Input({required: true}) productList!: WritableSignal<{name: string, count: number}[]>
+  
 }

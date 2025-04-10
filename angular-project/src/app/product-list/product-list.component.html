@@ -1,1 +1,5 @@
-<p>product-list works!</p>
+@for (product of productList(); track product.name) {
+    <p>{{ product.name }} X {{ product.count }}</p>
+} @empty {
+    <p>No products</p>
+}
