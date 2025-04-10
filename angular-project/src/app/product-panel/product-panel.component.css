@@ -1,0 +1,8 @@
+.gallery {
+    display: flex;
+}
+
+app-product {
+    width: 20vw;
+    height: 100px;
+}

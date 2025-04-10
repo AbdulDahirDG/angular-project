@@ -1,0 +1,36 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "name": "apple",
+            "description": "its red",
+            "price": 1.5,
+            "barcode":"ABCDE12345"
+        },
+        {
+            "id": 1,
+            "name": "banana",
+            "description": "its yellow",
+            "price": 1.0,
+            "barcode":"ABCDE12345"
+        },
+        {
+            "id": 2,
+            "name": "lightsaber",
+            "description": "dont drop it",
+            "price": 100.5,
+            "barcode":"ABCDE12345"
+        },
+        {
+            "id": 3,
+            "name": "orange",
+            "description": "its orange",
+            "price": 1.15,
+            "barcode":"ABCDE12345"
+        }
+    ],
+    "basket": {
+        "itemList": [],
+        "total": 0
+    }
+}
