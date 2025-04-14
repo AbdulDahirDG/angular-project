@@ -9,10 +9,15 @@
   height: 30px;
   justify-self: center;
   align-self: center;
+  padding: 20px;
+  font-size: xx-large;
+  color: rgb(95, 77, 55);
+  background-color: bisque;
 }
 
 .sidebar {
   min-width: 30px;
   width: 15%;
+  padding: 0px 10px 0px 10px;
 }
 

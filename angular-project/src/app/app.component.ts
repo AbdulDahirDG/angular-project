@@ -12,7 +12,6 @@ import { ProductPanelComponent } from './product-panel/product-panel.component';
 export class AppComponent {
 
   priceVal = signal(0)
-
   productList = signal<{name: string, count: number}[]>([])
 
 }

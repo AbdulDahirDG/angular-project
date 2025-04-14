@@ -1,10 +1,12 @@
 import { Component, Input, AfterViewInit, WritableSignal } from '@angular/core';
 import { Product } from '../product-panel/product-panel.service';
 import { UpdateFunc } from '../product-panel/product-panel.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-product',
-  imports: [],
+  imports: [MatCardModule, MatButtonModule],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })

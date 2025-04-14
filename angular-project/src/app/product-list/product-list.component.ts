@@ -1,8 +1,9 @@
 import { Component, Input, signal, WritableSignal } from '@angular/core';
+import {MatListModule} from '@angular/material/list';
 
 @Component({
   selector: 'app-product-list',
-  imports: [],
+  imports: [MatListModule],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })

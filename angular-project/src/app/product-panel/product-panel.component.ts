@@ -1,8 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { ProductComponent } from '../product/product.component';
 import { ProductPanelService, Product } from './product-panel.service';
 import { WritableSignal } from '@angular/core';
-
+import {takeUntilDestroyed} from "@angular/core/rxjs-interop"
+import { DestroyRef } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 export type UpdateFunc = (val: number) => number;
 
@@ -11,21 +13,25 @@ export type UpdateFunc = (val: number) => number;
   imports: [ProductComponent],
   templateUrl: './product-panel.component.html',
   styleUrl: './product-panel.component.css',
-  standalone: true
+  standalone: true,
 })
-export class ProductPanelComponent {
-  constructor (private productPanelService: ProductPanelService) {}
+export class ProductPanelComponent implements OnInit {
 
   @Input({required: true}) priceVal!: WritableSignal<number>;
   @Input({required: true}) productList!: WritableSignal<{name: string, count: number}[]>
 
-  public apiData: Product[] = [];
+  apiData: Product[] = [];
+  productPanelService = inject(ProductPanelService)
+  destroyRef = inject(DestroyRef)
+
+  // constructor (private productPanelService: ProductPanelService) {}
 
   getData() {
-    this.productPanelService.getProducts().then((products) => (this.apiData = products))
+    this.productPanelService.getProductsHttpClient().pipe(takeUntilDestroyed(this.destroyRef)).subscribe((products) => {
+      this.apiData = products})
   }
 
-  ngAfterViewInit() {
+  ngOnInit() {
     this.getData()
   }
 

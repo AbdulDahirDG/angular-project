@@ -1,5 +1,12 @@
+<mat-list>
 @for (product of productList(); track product.name) {
-    <p>{{ product.name }} X {{ product.count }}</p>
+        <mat-list-item>
+            <p>{{ product.name }}
+            @if (product.count > 1) {
+                <span>{{ product.count }}</span>
+            }</p>
+        </mat-list-item>
 } @empty {
     <p>No products</p>
 }
+</mat-list>
