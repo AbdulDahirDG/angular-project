@@ -1,6 +1,6 @@
 <div class="gallery">
     @for (item of apiData; track item.name) {
-        <app-product [priceVal]="priceVal" [product]="item" [productList]="productList" />
+        <app-product-olr [total]="total" [product]="item" [productList]="productList" />
     } @empty {
         <p>No items</p>
     }

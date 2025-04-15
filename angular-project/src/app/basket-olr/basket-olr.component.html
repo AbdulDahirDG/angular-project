@@ -1,0 +1,4 @@
+<app-product-list-olr [productList]="productList" />
+<p>Total: <span>£{{ total().toFixed(2) }}</span></p>
+<button (click)="handleCheckout()">Checkout</button>
+<app-dialog-olr *ngIf="dialogStatus()" (close)="this.dialogStatus.set(false)" [productList]="productList" [total]="total" />

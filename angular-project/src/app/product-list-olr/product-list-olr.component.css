@@ -1,0 +1,33 @@
+.list-container {
+    width: 40vw;
+    height: 100px;
+    background-color: var(--secondary-colour);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.list-container * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.list-container ul {
+    height: 80px;
+    overflow: scroll;
+}
+
+.list-container ul li {
+    list-style: none;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    border-radius: 2px;
+    width: 80%;
+    margin: 5px 0px 5px 0px;
+    background-color: white;
+}
+
+.list-container ul p {
+    justify-self: center;
+    align-self: center;
+}

@@ -13,11 +13,11 @@ import {MatDialogModule} from '@angular/material/dialog';
 })
 export class BasketComponent {
 
-  @Input({required: true}) priceVal!: WritableSignal<number>;
+  @Input({required: true}) total!: WritableSignal<number>;
   @Input({required: true}) productList!: WritableSignal<{name: string, count: number}[]>
 
   handleCheckout(){
-    this.priceVal.set(0)
+    this.total.set(0)
     this.productList.set([])
   }
 

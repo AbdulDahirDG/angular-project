@@ -1,0 +1,36 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.dialog {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    justify-items: center;
+}
+  
+.dialog button {
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.dialog button:hover {
+    border-color: rgb(197, 197, 197);
+}
+
+.dialog button:active {
+    background-color: rgb(197, 197, 197);
+}

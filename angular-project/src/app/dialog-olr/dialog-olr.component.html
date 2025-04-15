@@ -1,0 +1,14 @@
+<div class="overlay">
+    <div class="dialog">
+        <p>Thank you for shopping!</p>
+        <p>Receipt:</p>
+        <ul>
+            @for (product of productList(); track product.name) {
+                <li>{{ product.name }} X {{ product.count }}</li>
+            }
+        </ul>
+        <p>Total: <span>£{{ total().toFixed(2) }}</span></p>
+        <button (click)="onClose()">Close</button>
+    </div>
+</div>
+

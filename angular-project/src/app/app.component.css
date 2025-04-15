@@ -1,23 +1,47 @@
-
 .content {
   display: flex;
   flex-wrap: wrap;
+  justify-items: flex-start;
+  align-items: flex-start;
 }
 
 .title {
   width: 100vw;
   height: 30px;
-  justify-self: center;
-  align-self: center;
   padding: 20px;
   font-size: xx-large;
-  color: rgb(95, 77, 55);
-  background-color: bisque;
+  color: rgb(58, 44, 28);
+  background-color: white;
+  border: gray 1px solid;
 }
 
 .sidebar {
   min-width: 30px;
   width: 15%;
   padding: 0px 10px 0px 10px;
+}
+
+.product-list {
+  width: 100vw;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.banner {
+  justify-items: center;
+  background-color: var(--primary-colour);
+  width: 100vw;
+}
+
+footer {
+  background-color: darkgray;
+  width: 100vw;
+  height: 50px;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+footer p {
+  justify-self: center;
 }
 

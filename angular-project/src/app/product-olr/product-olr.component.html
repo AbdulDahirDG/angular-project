@@ -1,0 +1,6 @@
+<section>
+    <h3>{{ product.name.charAt(0).toUpperCase() + product.name.slice(1) }}</h3>
+    <p>{{ product.description }}</p>
+    <p>£{{ product.price.toFixed(2) }}</p>
+    <button (click)="handleClick()">Add</button>
+</section>

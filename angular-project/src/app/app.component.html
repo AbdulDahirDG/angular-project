@@ -10,8 +10,10 @@
 <main class="main">
   <div class="content">
     <div class="title">Shop Till</div>
-    <app-basket [priceVal]="priceVal" [productList]="productList" class="sidebar" />
-    <app-product-panel [priceVal]="priceVal" [productList]="productList" class="gallery" />
+    <app-banner-olr class="banner">Banner text</app-banner-olr>
+    <app-product-panel [total]="total" [productList]="productList" class="gallery" />
+    <app-basket-olr [total]="total" [productList]="productList" class="product-list" />
+    <footer><p>Footer text</p></footer>
   </div>
 </main>
 

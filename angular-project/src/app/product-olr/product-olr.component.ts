@@ -4,12 +4,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({
-  selector: 'app-product',
+  selector: 'app-product-olr',
   imports: [MatCardModule, MatButtonModule],
-  templateUrl: './product.component.html',
-  styleUrl: './product.component.css'
+  templateUrl: './product-olr.component.html',
+  styleUrl: './product-olr.component.css'
 })
-export class ProductComponent {
+export class ProductOLRComponent {
 
   @Input({required: true}) product!: Product;
   @Input({required: true}) total!: WritableSignal<number>;
