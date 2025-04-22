@@ -29,8 +29,5 @@
             "barcode":"ABCDE12345"
         }
     ],
-    "basket": {
-        "itemList": [],
-        "total": 0
-    }
+    "basket": []
 }

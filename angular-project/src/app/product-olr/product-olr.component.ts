@@ -23,6 +23,8 @@ export class ProductOLRComponent {
       this.productList.update((productLs) => [...productLs, {name: this.product.name, count: 1}])
     }
 
+    
+
   }
 
 }
