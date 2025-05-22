@@ -1,0 +1,33 @@
+.product-list__item {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    border-radius: 2px;
+    width: 80%;
+    margin: 5px 0px 5px 0px;
+    background-color: white;
+}
+
+.product-list__item * {
+    margin: 0px;
+}
+
+.product-list__item-name {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-list__item-count {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-colour);
+    border: 1px solid var(--secondary-colour);
+    color: white;
+    border-radius: 2px;
+    font-weight: 700;
+}
